@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+def homepage(request):
+    if request.method=='POST':
+        password=request.get['name']
+    return render(request,"pssd\index.html")
