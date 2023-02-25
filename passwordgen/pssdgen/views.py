@@ -11,6 +11,6 @@ def homepage(request):
         hash_object.update(password.encode())
         hashed_psd = hash_object.hexdigest()
         context={'hashed_psd':hashed_psd}
-
         print(password)
-    return render(request,"pssdgen\index.html",context)
+        return render(request,"pssdgen\index.html",context)
+    return render(request,"pssdgen\index.html")
